@@ -1,9 +1,9 @@
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule } from './material/material.module'
-import { NgModule } from '@angular/core';
 import { LayoutModule } from '@angular/cdk/layout';
+import { MaterialModule } from './modules/material/material.module'
+import { NgModule } from '@angular/core';
 
-import { MainNavComponent } from './main-nav/main-nav.component';
+import { MainNavComponent } from './components/main-nav/main-nav.component';
 
 @NgModule({
   declarations: [
@@ -11,12 +11,12 @@ import { MainNavComponent } from './main-nav/main-nav.component';
   ],
   imports: [
     BrowserAnimationsModule,
-    MaterialModule,
-    LayoutModule
+    LayoutModule,
+    MaterialModule
   ],
   exports: [
-    MaterialModule,
-    MainNavComponent
+    MainNavComponent,
+    MaterialModule
   ]
 })
 export class CoreModule { }
