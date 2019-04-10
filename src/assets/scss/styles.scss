@@ -7,7 +7,9 @@
 @import "~bootstrap/scss/utilities";
 @import "./partials/reset";
 
-@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import "./partials/theme";
+@include mat-core();
+@include angular-material-theme($my-theme);
 
 body { 
   font-family: Roboto, Arial, sans-serif;
