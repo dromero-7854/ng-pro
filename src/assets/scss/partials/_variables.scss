@@ -4,11 +4,11 @@ $link-hover-decoration: none;
 $label-margin-bottom: 0;
 
 $grid-breakpoints: (
-  xs: 0, // handset portrait (small, medium, large) | handset landscape (small)
-  sm: 600px, // handset landscape (medium, large) | tablet portrait(small, large)
-  md: 960px, //  tablet landscape (small, large)
+  xs: 0,      // handset portrait (small, medium, large) | handset landscape (small)
+  sm: 600px,  // handset landscape (medium, large) | tablet portrait(small, large)
+  md: 960px,  // tablet landscape (small, large)
   lg: 1280px, // laptops and desktops
-  xl: 1600px // large desktops
+  xl: 1600px  // large desktops
 );
 
 $container-max-widths: (
@@ -17,3 +17,6 @@ $container-max-widths: (
   lg: 1280px,
   xl: 1600px
 );
+
+$icon-font-path: '../../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+$primary: red;

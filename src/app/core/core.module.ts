@@ -1,9 +1,11 @@
+import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MaterialModule } from './modules/material/material.module'
-import { NgModule } from '@angular/core';
-
-import { MainNavComponent } from './components/main-nav/main-nav.component';
+// modules
+import { SharedModule } from '../shared/shared.module';
+// componets 
+import { MainNavComponent } from './main-nav/main-nav.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -12,11 +14,20 @@ import { MainNavComponent } from './components/main-nav/main-nav.component';
   imports: [
     BrowserAnimationsModule,
     LayoutModule,
-    MaterialModule
+    SharedModule,
+    RouterModule
   ],
   exports: [
-    MainNavComponent,
-    MaterialModule
+    MainNavComponent
   ]
 })
-export class CoreModule { }
+export class CoreModule {
+
+  constructor(@Optional() @SkipSelf() parentModule: CoreModule) {
+    if (parentModule) {
+      throw new Error(
+        'GreetingModule is already loaded. Import it in the AppModule only');
+    }
+  }
+
+}
