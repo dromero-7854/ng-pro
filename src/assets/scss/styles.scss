@@ -1,19 +1,22 @@
-@import "./partials/variables";
+@import "./abstract/variables";
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
 @import "~bootstrap/scss/reboot";
 @import "~bootstrap/scss/grid"; 
 @import "~bootstrap/scss/utilities";
-@import "./partials/reset";
+@import "./base/reset";
 @import '../../../node_modules/bootstrap/scss/bootstrap';
 
-@import "./partials/theme";
+@import "./themes/theme";
 @include mat-core();
 @include angular-material-theme($my-theme);
 
+@import "./layout/portlet";
+@import "./components/buttons";
+
 body { 
-  font-family: Roboto, Arial, sans-serif;
+  font-family: 'Roboto', "Helvetica Neue", sans-serif;
   margin: 0;
 }
 

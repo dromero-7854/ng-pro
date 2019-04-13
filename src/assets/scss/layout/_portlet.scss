@@ -1,0 +1,28 @@
+
+.portlet.mat-card {
+  margin: 5px 5px;
+  padding: 0;
+}
+
+.portlet.mat-card .mat-card-header {
+  background-color: $portlet-color;
+}
+
+.portlet.mat-card .mat-card-header .mat-card-title {
+  margin: 10px 0 10px 0;
+  font-size: 1.0rem;
+  font-weight: 500;
+}
+
+.portlet.mat-card .mat-card-header .mat-card-subtitle {
+  margin: -10px 0 5px 0;
+}
+
+.portlet.mat-card .mat-card-content {
+  margin: 10px 16px;
+}
+
+.portlet.mat-card .mat-card-actions, .portlet.mat-card .mat-card-actions:last-child {
+  margin: 0;
+  padding: 8px 16px;
+}
