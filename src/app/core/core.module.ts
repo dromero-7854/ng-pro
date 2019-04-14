@@ -4,11 +4,13 @@ import { LayoutModule } from '@angular/cdk/layout';
 // modules
 import { SharedModule } from '../shared/shared.module';
 // componets 
+import { FooterComponent } from './footer/footer.component';
 import { MainNavComponent } from './main-nav/main-nav.component';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
+    FooterComponent,
     MainNavComponent
   ],
   imports: [
@@ -18,6 +20,7 @@ import { RouterModule } from '@angular/router';
     RouterModule
   ],
   exports: [
+    FooterComponent,
     MainNavComponent
   ]
 })

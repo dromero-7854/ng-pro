@@ -1,0 +1,28 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 255px;
+  margin-bottom: 40px;
+}
+
+.sidenav-content {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.mat-toolbar-row, .mat-toolbar-single-row {
+  height: 80px;
+}
+
+#sidenav-menu {
+  margin-right: 10px;
+}

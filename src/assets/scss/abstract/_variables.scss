@@ -24,8 +24,9 @@ $icon-font-path: '../../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 
 
 
-
-$portlet-color: #e9e9e9;
-
+$psg-yellow: #ffd200;
+$psg-grey: #e9e9e9;
+$footer-bkg-color: $psg-yellow;
+$portlet-color: $psg-grey;
 $button-color:rgba(0, 0, 0, 0.87);
-$button-background-color: #ffd200;
+$button-bkg-color: $psg-yellow;
