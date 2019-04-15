@@ -5,10 +5,25 @@
     <mat-toolbar color="primary">
       <img src="assets/img/logo-navbar.png">
     </mat-toolbar>
+
+
+    
+
     <mat-nav-list>
-      <a mat-list-item routerLink="/admin/user-admin">Usuarios</a>
-      <a mat-list-item routerLink="/admin/scoring-admin">Scoring</a>
+      <div class="menu-item ripple">
+        <mat-icon class="menu-icon">groups</mat-icon>
+        <span class="menu-title">Usuarios</span>
+        <mat-icon class="expanded-icon">expand_more</mat-icon>
+      </div>
+      <div class="menu-item ripple">
+          <mat-icon class="menu-icon">groups</mat-icon>
+          <span class="menu-title">Usuarios</span>
+          <mat-icon class="expanded-icon">expand_more</mat-icon>
+        </div>
     </mat-nav-list>
+
+
+
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary">
