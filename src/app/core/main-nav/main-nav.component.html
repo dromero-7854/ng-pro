@@ -6,17 +6,7 @@
       <img src="assets/img/logo-navbar.png">
     </mat-toolbar>
     <mat-nav-list>
-      <!-- TODO: create a card component -->
-      <mat-card class="user-card">
-        <mat-card-header>
-          <div mat-card-avatar>
-            <ngx-avatar name="Dante Romero" size="40" bgColor="#263238"></ngx-avatar>
-          </div>
-          <mat-card-title>Dante Romero</mat-card-title>
-          <mat-card-subtitle>dante.romero@prosegur.com.ar</mat-card-subtitle>
-        </mat-card-header>
-      </mat-card>
-      <!-- END TODO -->
+      <app-user-card></app-user-card>
       <app-menu-items></app-menu-items>
     </mat-nav-list>
   </mat-sidenav>

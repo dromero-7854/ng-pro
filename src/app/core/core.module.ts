@@ -9,12 +9,14 @@ import { FooterComponent } from './footer/footer.component';
 import { MainNavComponent } from './main-nav/main-nav.component';
 import { RouterModule } from '@angular/router';
 import { MenuItemsComponent } from './menu-items/menu-items.component';
+import { UserCardComponent } from './user-card/user-card.component';
 
 @NgModule({
   declarations: [
     FooterComponent,
     MainNavComponent,
-    MenuItemsComponent
+    MenuItemsComponent,
+    UserCardComponent
   ],
   imports: [
     BrowserAnimationsModule,
