@@ -22,11 +22,19 @@ $icon-font-path: '../../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 
 
 
-
-
-$psg-yellow: #ffd200;
-$psg-grey: #e9e9e9;
+// psg theme color
+$psg-yellow: #FFD200;
+$psg-grey: #E9E9E9;
+// menu 
+$menu-container-color:#5F6368;
+$menu-item-hover-color: #202124;
+$menu-item-hover-bkg-color: $psg-grey;
+// footer
 $footer-bkg-color: $psg-yellow;
+// portlet
 $portlet-color: $psg-grey;
-$button-color:rgba(0, 0, 0, 0.87);
+// buttons
+$button-color: #000000;
 $button-bkg-color: $psg-yellow;
+
+

@@ -3,6 +3,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from '@angular/cdk/layout';
 // modules
 import { SharedModule } from '../shared/shared.module';
+import { AvatarModule } from 'ngx-avatar';
 // componets 
 import { FooterComponent } from './footer/footer.component';
 import { MainNavComponent } from './main-nav/main-nav.component';
@@ -19,6 +20,7 @@ import { MenuItemsComponent } from './menu-items/menu-items.component';
     BrowserAnimationsModule,
     LayoutModule,
     SharedModule,
+    AvatarModule,
     RouterModule
   ],
   exports: [

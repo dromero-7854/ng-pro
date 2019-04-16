@@ -1,20 +1,15 @@
-
-
-
-<div class="menu-container" *ngFor="let item of menuItems" [ngClass]="{'menu-container-expanded': item.expanded}">
+<div class="menu-container" *ngFor="let item of menuItems" [ngClass]="{ 'menu-container-expanded': item.expanded }">
   <mat-divider></mat-divider>
-  <div (click)="onItemSelected(item)" class="menu-tcs-item ripple">
-    
-    
-    <mat-icon class="menu-tcs-icon">{{item.icon}}</mat-icon>
-    <span class="menu-tcs-title">{{item.name}}</span>
-    <mat-icon class="menu-tcs-expand-icon" [@indicatorRotate]="item.expanded ? 'expanded': 'collapsed'">chevron_right</mat-icon>
+  <div (click)="onClick(item)" class="menu-item ripple">
+    <mat-icon class="menu-icon">{{item.icon}}</mat-icon>
+    <span class="menu-title">{{item.name}}</span>
+    <mat-icon *ngIf="item.children && item.children.length" class="menu-expand-icon"
+      [@indicatorRotate]="item.expanded ? 'expanded': 'collapsed'">chevron_right</mat-icon>
   </div>
-  <div *ngIf="item.children && item.children.length && item.expanded">
-    <div *ngFor="let child of item.children" (click)="onItemSelected(child)" class="submenu-tcs-item ripple">
-      <span class="submenu-tcs-title">{{child.name}}</span>
+  <div *ngIf="item.children && item.children.length > 0 && item.expanded">
+    <div *ngFor="let child of item.children" (click)="onClick(child)" class="submenu-item ripple">
+      <span class="submenu-title">{{child.name}}</span>
     </div>
   </div>
-  
 </div>
 <mat-divider></mat-divider>

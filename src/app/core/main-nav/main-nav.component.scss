@@ -3,7 +3,7 @@
 }
 
 .sidenav {
-  width: 255px;
+  width: 300px;
   margin-bottom: 40px;
 }
 
@@ -25,4 +25,23 @@
 
 #sidenav-menu {
   margin-right: 10px;
+}
+
+.mat-list-base {
+  padding: 0px;
+}
+
+
+
+
+
+
+// TODO: add to card component sccs
+.user-card.mat-card {
+  padding: 15px 10px 0px 10px;
+  box-shadow: none;
+}
+
+.user-card.mat-card .mat-card-header .mat-card-title {
+  font-size: 16px;
 }

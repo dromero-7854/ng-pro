@@ -8,53 +8,58 @@ import { trigger, state, style } from '@angular/animations';
   styleUrls: ['./menu-items.component.scss'],
   animations: [
     trigger('indicatorRotate', [
-      state('collapsed', style({transform: 'rotate(0deg)'})),
-      state('expanded', style({transform: 'rotate(90deg)'}))
+      state('collapsed', style({ transform: 'rotate(0deg)' })),
+      state('expanded', style({ transform: 'rotate(90deg)' }))
     ])
   ]
 })
 export class MenuItemsComponent implements OnInit {
 
-  
-
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
-  onItemSelected(item: MenuItem) {
-    if (item.children && item.children.length) {
+  onClick(item: MenuItem) {
+    if (item.children && item.children.length > 0) {
       item.expanded = !item.expanded;
-    }
-    if (!item.children || !item.children.length) {
+    } else if (item.route) {
       console.log('navigate');
     }
   }
 
   menuItems: MenuItem[] = [
     {
-      name: 'Menu.01',
+      name: 'Scoring',
       expanded: true,
-      icon: 'recent_actors',
+      icon: 'stars',
       children: [
         {
-          name: 'Ver usuarios'
+          name: 'Ver scorings',
+          route: 'scorings'
         },
         {
-          name: 'Crear un nuevo usuario'
+          name: 'Nuevo scoring',
+          route: 'new-scoring'
         }
       ]
     },
     {
-      name: 'Settings',
+      name: 'Administrar variables',
+      icon: 'dashboard',
+      route: 'admin-scoring'
+    },
+    {
+      name: 'Usuarios',
       expanded: true,
-      icon: 'settings',
+      icon: 'recent_actors',
       children: [
         {
-          name: 'Ver scorings'
+          name: 'Ver usuarios',
+          route: 'users'
         },
         {
-          name: 'Nuevo scoring'
+          name: 'Crear un nuevo usuario',
+          route: 'new-user'
         }
       ]
     }
