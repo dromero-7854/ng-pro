@@ -7,11 +7,13 @@ import { SharedModule } from '../shared/shared.module';
 import { FooterComponent } from './footer/footer.component';
 import { MainNavComponent } from './main-nav/main-nav.component';
 import { RouterModule } from '@angular/router';
+import { MenuItemsComponent } from './menu-items/menu-items.component';
 
 @NgModule({
   declarations: [
     FooterComponent,
-    MainNavComponent
+    MainNavComponent,
+    MenuItemsComponent
   ],
   imports: [
     BrowserAnimationsModule,
