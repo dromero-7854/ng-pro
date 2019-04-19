@@ -2,6 +2,7 @@ import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from '@angular/cdk/layout';
 // modules
+import { TranslateModule } from '@ngx-translate/core';
 import { SharedModule } from '../shared/shared.module';
 import { AvatarModule } from 'ngx-avatar';
 // componets 
@@ -21,6 +22,7 @@ import { UserCardComponent } from './user-card/user-card.component';
   imports: [
     BrowserAnimationsModule,
     LayoutModule,
+    TranslateModule,
     SharedModule,
     AvatarModule,
     RouterModule

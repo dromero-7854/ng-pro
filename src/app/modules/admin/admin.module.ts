@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 // modules
+import { TranslateModule } from '@ngx-translate/core';
 import { SharedModule } from '../../shared/shared.module';
 // components
 import { ScoringAdminComponent } from './pages/scoring-admin/scoring-admin.component';
@@ -10,6 +11,7 @@ import { AdminRoutingModule } from './admin-routing.module';
 @NgModule({
   imports: [
     AdminRoutingModule,
+    TranslateModule.forChild(),
     SharedModule
   ],
   providers: [],
