@@ -1,16 +1,16 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
+// modules
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LayoutModule } from '@angular/cdk/layout';
-// modules
 import { TranslateModule } from '@ngx-translate/core';
+import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
 import { AvatarModule } from 'ngx-avatar';
 // componets 
-import { FooterComponent } from './footer/footer.component';
-import { MainNavComponent } from './main-nav/main-nav.component';
-import { RouterModule } from '@angular/router';
-import { MenuItemsComponent } from './menu-items/menu-items.component';
-import { UserCardComponent } from './user-card/user-card.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { MainNavComponent } from './components/main-nav/main-nav.component';
+import { MenuItemsComponent } from './components/menu-items/menu-items.component';
+import { UserCardComponent } from './components/user-card/user-card.component';
 
 @NgModule({
   declarations: [

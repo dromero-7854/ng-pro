@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { MenuItem } from '../models/core.model';
+import { MenuItem } from '../../models/core.model';
 import { trigger, state, style } from '@angular/animations';
 
 @Component({
