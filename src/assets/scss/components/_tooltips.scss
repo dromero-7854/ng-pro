@@ -1,0 +1,26 @@
+.psg-tooltip .tooltip-inner {
+  background-color: $button-bkg-color;
+  color: $button-color;
+  font-size: 13px;
+}
+
+.psg-tooltip.bs-tooltip-top .arrow::before {
+  border-top-color: $button-bkg-color;
+}
+
+.psg-tooltip.bs-tooltip-right .arrow::before {
+  border-right-color: $button-bkg-color;
+}
+
+.psg-tooltip.bs-tooltip-bottom .arrow::before {
+  border-bottom-color: $button-bkg-color;
+}
+
+.psg-tooltip.bs-tooltip-left .arrow::before {
+  border-left-color: $button-bkg-color;
+}
+
+.tooltip.show {
+  opacity: 1;
+}
+

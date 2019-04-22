@@ -1,24 +1,64 @@
 <div class="container">
-  <div class="row">
-    <div class="col">
-      <mat-card class="example-card">
-        <mat-card-header>
-          <mat-card-title>Scoring</mat-card-title>
-          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-        </mat-card-header>
-        <mat-card-content>
-          <p>
-            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-            bred for hunting.
-          </p>
-        </mat-card-content>
-        <mat-card-actions align="end">
-          <button mat-button>Like</button>
-          <div fxFlex></div>
-          <button mat-button>Compartir</button>
-        </mat-card-actions>
-      </mat-card>
-    </div>
+  <div class="row d-flex">
+    <mat-card class="scoring-card">
+      <div class="container">
+        <div [ngClass]="{ 'row' : true, 'd-flex': true, 'flex-column': smallerWP }">
+          <div [ngClass]="{ 'scoring-input' : true, 'flex-grow-1': !smallerWP }">
+            <mat-form-field class="select-form-field">
+              <mat-label>Indicador deuda Equifax</mat-label>
+              <mat-select>
+                <mat-option *ngFor="let option of options" [value]="option.value">
+                  {{option.name}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="scoring-info d-flex">
+            <div [ngClass]="{ 'help': true, 'flex-grow-1': smallerWP }">
+              <mat-icon class="help-icon" ngbTooltip="Indicador de deuda asociado al Score Equifax." triggers="click:blur"
+                placement="{{placement}}" tooltipClass="psg-tooltip">help_outline</mat-icon>
+            </div>
+            <div class="flex-row info">
+              <div><span>Peso (%)</span></div>
+              <div><span>{{weight}}</span></div>
+            </div>
+            <div class="flex-row score">
+              <div><span>Score</span></div>
+              <div><span>{{score}}</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </mat-card>
+    <mat-card class="scoring-card">
+      <div class="container">
+        <div [ngClass]="{ 'row' : true, 'd-flex': true, 'flex-column': smallerWP }">
+          <div [ngClass]="{ 'scoring-input' : true, 'flex-grow-1': !smallerWP }">
+            <mat-form-field class="select-form-field">
+              <mat-label>Indicador deuda Equifax</mat-label>
+              <mat-select>
+                <mat-option *ngFor="let option of options" [value]="option.value">
+                  {{option.name}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="scoring-info d-flex">
+            <div [ngClass]="{ 'help': true, 'flex-grow-1': smallerWP }">
+              <mat-icon class="help-icon" ngbTooltip="Indicador de deuda asociado al Score Equifax." triggers="click:blur"
+                placement="{{placement}}" tooltipClass="psg-tooltip">help_outline</mat-icon>
+            </div>
+            <div class="flex-row info">
+              <div><span>Peso (%)</span></div>
+              <div><span>{{weight}}</span></div>
+            </div>
+            <div class="flex-row score">
+              <div><span>Score</span></div>
+              <div><span>{{score}}</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </mat-card>
   </div>
 </div>

@@ -1,0 +1,60 @@
+.scoring-card {
+  width: 100%;
+  margin: 5px 10px;
+}
+
+.mat-icon {
+  height: 20px;
+  width: 20px;
+  font-size: 20px;
+}
+
+.help {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.help-icon:hover {
+  cursor: pointer;
+}
+
+.scoring-info {
+  align-items: center;
+}
+
+.info, .score {
+  font-size: 13px;
+  text-align: center;
+}
+
+.info {
+  margin-right: 10px;
+}
+
+.score {
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .select-form-field {
+    width: 100%;
+  }
+}
+
+@media (min-width: 600px) {
+
+  .scoring-container {
+    align-items: center;
+  }
+
+  .select-form-field {
+    width: 100%;
+    max-width: 450px;
+    padding-right: 5px;
+  }
+  
+}
+
+
+
