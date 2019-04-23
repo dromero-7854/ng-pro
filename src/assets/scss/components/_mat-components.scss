@@ -1,14 +1,15 @@
 //
-// form controls: select
-//
-.mat-select-value-text, .mat-option-text,
-.mat-select-panel .mat-option-text,
-.mat-form-field-label.mat-form-field-empty {
-  font-size: 14px;
+// custom form field controls
+// 
+mat-form-field.mat-form-field {
+  font-size: 15px;
 }
 
-.mat-form-field-appearance-legacy .mat-form-field-label {
-  top: 22px;
+//
+// form controls: select
+//
+.mat-checkbox-layout .mat-checkbox-label {
+  font-size: 14px;
 }
 
 //

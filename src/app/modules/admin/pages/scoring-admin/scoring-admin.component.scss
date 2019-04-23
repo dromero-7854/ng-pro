@@ -3,6 +3,10 @@
   margin: 5px 10px;
 }
 
+.align-items-center {
+  align-items: center;
+}
+
 .mat-icon {
   height: 20px;
   width: 20px;
@@ -36,10 +40,19 @@
   font-weight: 500;
 }
 
+
+
+
 @media (max-width: 850px) {
+
   .select-form-field {
     width: 100%;
   }
+
+  .input-text-field {
+    width: 100%;
+  }
+
 }
 
 @media (min-width: 850px) {
@@ -53,7 +66,17 @@
     max-width: 450px;
     padding-right: 5px;
   }
+
+  .checkbox-field {
+    margin-left: 2px;
+  }
   
+  .input-text-field {
+    width: 100%;
+    max-width: 450px;
+    padding-right: 5px;
+  }
+
 }
 
 

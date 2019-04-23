@@ -11,7 +11,7 @@ export class ScoringAdminComponent implements OnInit {
   options: { name: string, value: number }[] = [{ name: 'con_deuda', value: 1 }, { name: 'sin_deuda', value: 2 }, { name: 'sin_equifax', value: 3 }];
   weight: string = '99.9';
   score: string = '999';
-
+  value: string = 'Clear me'; 
 
   smallerWP: boolean = true;
   placement: string = 'left';
