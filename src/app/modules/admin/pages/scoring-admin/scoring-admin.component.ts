@@ -20,7 +20,7 @@ export class ScoringAdminComponent implements OnInit {
 
   ngOnInit() {
     this.breakpointObserver
-      .observe(['(min-width: 600px)'])
+      .observe(['(min-width: 850px)'])
       .subscribe((state: BreakpointState) => {
         this.smallerWP = !state.matches;
         if (this.smallerWP) {

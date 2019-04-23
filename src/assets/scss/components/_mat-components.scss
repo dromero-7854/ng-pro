@@ -1,0 +1,20 @@
+//
+// form controls: select
+//
+.mat-select-value-text, .mat-option-text,
+.mat-select-panel .mat-option-text,
+.mat-form-field-label.mat-form-field-empty {
+  font-size: 14px;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-label {
+  top: 22px;
+}
+
+//
+// buttons & indicators: button
+//
+.psg-mat-btn.mat-raised-button {
+  background-color: $button-bkg-color;
+  color: $button-color;
+}

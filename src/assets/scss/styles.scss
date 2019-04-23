@@ -13,8 +13,8 @@
 @include angular-material-theme($my-theme);
 
 @import "./layout/portlet";
-@import "./components/buttons";
-@import "./components/tooltips";
+@import "./components/mat-components";
+@import "./components/bootstrap-components";
 
 body { 
   font-family: 'Roboto', "Helvetica Neue", sans-serif;
