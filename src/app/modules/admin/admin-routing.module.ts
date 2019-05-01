@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { UserAdminComponent } from './pages/user-admin/user-admin.component';
-import { ScoringAdminComponent } from './pages/scoring-admin/scoring-admin.component';
+import { NewScoringComponent } from './pages/new-scoring/new-scoring.component';
 
 const routes: Routes = [
   {
@@ -10,8 +10,8 @@ const routes: Routes = [
     component: UserAdminComponent
   },
   {
-    path: 'scoring-admin',
-    component: ScoringAdminComponent
+    path: 'new-scoring',
+    component: NewScoringComponent
   }
 ];
 

@@ -23,18 +23,24 @@ $icon-font-path: '../../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 
 
 // prosegur theme color
-$psg-yellow: #FFD200;
-$psg-grey: #E9E9E9;
+$psg-yellow: #f8d434;
+$psg-grey: #e9e9e9;
+$psg-sub-color: rgba(0, 0, 0, 0.54);
+// sidenav 
+$psg-sidenav-bkg-color: #e8eaea;
 // menu 
-$menu-container-color:#5F6368;
-$menu-item-hover-color: #202124;
-$menu-item-hover-bkg-color: $psg-grey;
+$menu-container-color: #333;
+$menu-item-hover-color: #000;
+$menu-item-hover-bkg-color: #ececec;
 // footer
 $footer-bkg-color: $psg-yellow;
 // portlet
-$portlet-color: $psg-grey;
+$portlet-color: #f8f9fa;
 // buttons
-$button-color: #000000;
+$button-color: #333;
 $button-bkg-color: $psg-yellow;
+// toolbar
+$toolbar-bkg-color: $psg-yellow;
+$toolbar-hover-btn: #f1df8e;
 
 

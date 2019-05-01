@@ -1,0 +1,187 @@
+<app-breadcrumb></app-breadcrumb>
+
+
+
+
+
+<mat-card class="psg-client-card">
+  <mat-card-header class="d-flex flex-column">
+    <span class="psg-client-card-title">Dante Romero</span>
+    <span class="psg-client-card-subtitle">DNI 31676390</span>
+  </mat-card-header>
+  <mat-card-content>
+    <p>Domicilio: Av. San Martin 2719 4°C (Florida - Vicente Lopez)</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <div class="psg-client-scoring d-flex flex-column">
+      <div class="d-flex align-items-center justify-content-center">
+        <span class="scoring-text">Scoring</span>
+        <span class="scoring-number">( 999 )</span>
+      </div>
+      <div class="d-flex align-items-center justify-content-center">
+        <i class="material-icons">star</i>
+        <i class="material-icons">star</i>
+        <i class="material-icons">star</i>
+        <i class="material-icons">star_half</i>
+        <i class="material-icons">star_border</i>
+      </div>
+    </div>
+    <div class="psg-toolbar d-flex align-items-center">
+      <div class="psg-button more-vert" matRipple [matMenuTriggerFor]="menu">
+        <mat-icon class="more-vert-icon">more_vert</mat-icon>
+      </div>
+      <div class="psg-button" matRipple>
+        <i class="fas fa-calculator psg-button-icon"></i><span>Calcular</span>
+      </div>
+      <div class="psg-button" matRipple>
+        <i class="far fa-thumbs-up psg-button-icon"></i><span>Aprobar</span>
+      </div>
+      <div class="psg-button" matRipple>
+        <i class="far fa-save psg-button-icon"></i><span>Guardar</span>
+      </div>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>dialpad</mat-icon>
+          <span>Redial</span>
+        </button>
+        <button mat-menu-item disabled>
+          <mat-icon>voicemail</mat-icon>
+          <span>Check voicemail</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>notifications_off</mat-icon>
+          <span>Disable alerts</span>
+        </button>
+      </mat-menu>
+    </div>
+    <mat-progress-bar mode="determinate" value="70"></mat-progress-bar>
+  </mat-card-actions>
+</mat-card>
+
+
+
+
+
+
+
+
+
+
+
+<div class="container mt-2">
+  <div class="row">
+    <mat-card class="psg-scoring-card">
+      <div class="container">
+
+
+
+        <div [ngClass]="{ 'scoring-input': true, 'row': true, 'd-flex': true, 'align-items-center': !smallerWP, 'flex-column': smallerWP }">
+          <div [ngClass]="{ 'flex-grow-1': !smallerWP }">
+            <mat-form-field class="select-form-field">
+              <mat-label>Indicador deuda Equifax</mat-label>
+              <mat-select>
+                <mat-option *ngFor="let option of options" [value]="option.value">
+                  {{option.name}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="scoring-info d-flex">
+            <div [ngClass]="{ 'help': true, 'flex-grow-1': smallerWP }">
+              <mat-icon class="help-icon" ngbTooltip="Indicador de deuda asociado al Score Equifax."
+              triggers="click:blur" placement="{{placement}}" tooltipClass="psg-tooltip">help_outline</mat-icon>
+            </div>
+            <div class="flex-row info">
+              <div><span>Peso (%)</span></div>
+              <div><span>{{weight}}</span></div>
+            </div>
+            <div class="flex-row score">
+              <div><span>Score</span></div>
+              <div><span>{{score}}</span></div>
+            </div>
+          </div>
+        </div>
+        
+        <mat-divider></mat-divider>
+        
+        <div [ngClass]="{ 'scoring-input': true, 'row': true, 'd-flex': true, 'align-items-center': !smallerWP, 'flex-column': smallerWP }">
+          <div [ngClass]="{ 'flex-grow-1': !smallerWP }">
+            <mat-form-field class="select-form-field">
+              <mat-label>Indicador deuda Equifax</mat-label>
+              <mat-select>
+                <mat-option *ngFor="let option of options" [value]="option.value">
+                  {{option.name}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="scoring-info d-flex">
+            <div [ngClass]="{ 'help': true, 'flex-grow-1': smallerWP }">
+              <mat-icon class="help-icon" ngbTooltip="Indicador de deuda asociado al Score Equifax."
+              triggers="click:blur" placement="{{placement}}" tooltipClass="psg-tooltip">help_outline</mat-icon>
+            </div>
+            <div class="flex-row info">
+              <div><span>Peso (%)</span></div>
+              <div><span>{{weight}}</span></div>
+            </div>
+            <div class="flex-row score">
+              <div><span>Score</span></div>
+              <div><span>{{score}}</span></div>
+            </div>
+          </div>
+        </div>
+        
+        <mat-divider></mat-divider>
+        
+        <div [ngClass]="{ 'scoring-input': true, 'row': true, 'd-flex': true, 'align-items-center': !smallerWP, 'flex-column': smallerWP }">
+          <div [ngClass]="{ 'flex-grow-1': !smallerWP }">
+            <mat-checkbox class="checkbox-field" color="primary">Indicador servicio de Acuda</mat-checkbox>
+          </div>
+          <div class="scoring-info d-flex">
+            <div [ngClass]="{ 'help': true, 'flex-grow-1': smallerWP }">
+              <mat-icon class="help-icon" ngbTooltip="Indicador de deuda asociado al Score Equifax."
+              triggers="click:blur" placement="{{placement}}" tooltipClass="psg-tooltip">help_outline</mat-icon>
+            </div>
+            <div class="flex-row info">
+              <div><span>Peso (%)</span></div>
+              <div><span>{{weight}}</span></div>
+            </div>
+            <div class="flex-row score">
+              <div><span>Score</span></div>
+              <div><span>{{score}}</span></div>
+            </div>
+          </div>
+        </div>
+        
+        <mat-divider></mat-divider>
+        
+        <div [ngClass]="{ 'scoring-input': true, 'row': true, 'd-flex': true, 'align-items-center': !smallerWP, 'flex-column': smallerWP }">
+          <div [ngClass]="{ 'flex-grow-1': !smallerWP }">
+            <mat-form-field class="input-text-field">
+              <input matInput type="text" placeholder="Clearable input" [(ngModel)]="value">
+              <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+                <mat-icon>close</mat-icon>
+              </button>
+            </mat-form-field>
+          </div>
+          <div class="scoring-info d-flex">
+            <div [ngClass]="{ 'help': true, 'flex-grow-1': smallerWP }">
+              <mat-icon class="help-icon" ngbTooltip="Indicador de deuda asociado al Score Equifax."
+              triggers="click:blur" placement="{{placement}}" tooltipClass="psg-tooltip">help_outline</mat-icon>
+            </div>
+            <div class="flex-row info">
+              <div><span>Peso (%)</span></div>
+              <div><span>{{weight}}</span></div>
+            </div>
+            <div class="flex-row score">
+              <div><span>Score</span></div>
+              <div><span>{{score}}</span></div>
+            </div>
+          </div>
+        </div>
+        
+        
+      </div>
+    </mat-card>
+  </div>
+</div>

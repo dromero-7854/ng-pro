@@ -1,0 +1,190 @@
+@import "../../../../../assets/scss/abstract/variables";
+
+.new-scoring-container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.psg-client-card {
+  padding: 0px;
+  margin: 0 10px;
+  border-radius: 4px 4px 0 0;
+}
+
+.psg-client-card .mat-card-header {
+  padding: 10px;
+}
+
+.psg-client-card .mat-card-content {
+  margin: 0;
+  padding: 0 10px 10px 10px;
+}
+
+.psg-client-card .mat-card-actions {
+  padding: 0;
+  margin: 0;
+}
+
+.psg-client-card-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: $button-color;
+}
+
+.psg-client-card-subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  color: $psg-sub-color
+}
+
+
+
+
+
+
+
+
+.psg-toolbar {
+  width: 100%;
+  height: 40px;
+  background-color: $psg-yellow;
+  padding: 0 10px;
+  
+  .psg-button {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 13px;
+    font-weight: 500;
+    color: $button-color;
+    padding: 0 10px;
+    cursor:pointer;
+  }
+  
+  .psg-button:hover {
+    background-color: $toolbar-hover-btn;
+  }
+  
+  .psg-button .psg-button-icon {
+    font-size: 15px;
+    margin-right: 5px;
+  }
+  
+  .more-vert {
+    margin: 0;
+    padding: 0;
+  }
+  
+}
+
+
+
+
+
+
+
+
+.psg-client-scoring {
+  padding: 5px;
+  background-color: rgb(38, 50, 56);
+  color: #fff;
+}
+
+.psg-client-scoring span {
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.psg-client-scoring .scoring-text {
+  text-transform: uppercase;
+  margin-right: 5px;
+}
+
+.psg-client-scoring .scoring-number {
+  font-size: 14px;
+}
+
+.psg-client-scoring .material-icons {
+  font-size: 18px;
+}
+
+
+
+
+
+
+
+
+.psg-scoring-card {
+  width: 100%;
+  margin: 0px 10px;
+  padding: 0;
+}
+
+.psg-scoring-card .scoring-input {
+  padding: 10px;
+}
+
+.psg-scoring-card .mat-icon {
+  height: 20px;
+  width: 20px;
+  font-size: 20px;
+}
+
+.psg-scoring-card .help {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.psg-scoring-card .help-icon:hover {
+  cursor: pointer;
+}
+
+.psg-scoring-card .info, 
+.psg-scoring-card .score {
+  font-size: 13px;
+  text-align: center;
+}
+
+.psg-scoring-card .info {
+  margin-right: 10px;
+}
+
+.psg-scoring-card .score {
+  font-weight: 500;
+}
+
+@media (max-width: 850px) {
+  
+  .select-form-field {
+    width: 100%;
+  }
+  
+  .input-text-field {
+    width: 100%;
+  }
+
+  .checkbox-field {
+    margin-left: 2px;
+  }
+  
+}
+
+@media (min-width: 850px) {
+  
+  .select-form-field {
+    width: 100%;
+    max-width: 450px;
+    padding-right: 5px;
+  }
+  
+  .input-text-field {
+    width: 100%;
+    max-width: 450px;
+    padding-right: 5px;
+  }
+  
+}
+

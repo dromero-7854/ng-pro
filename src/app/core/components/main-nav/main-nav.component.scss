@@ -1,14 +1,17 @@
+@import '../../../../assets/scss/abstract/variables';
+
 .sidenav-container {
   height: 100%;
+  background-color: $psg-sidenav-bkg-color;
 }
 
 .sidenav {
   width: 300px;
   margin-bottom: 40px;
+  border-right: none;
 }
 
 .sidenav-content {
-  margin-top: 20px;
   margin-bottom: 40px;
   padding-bottom: 20px;
 }

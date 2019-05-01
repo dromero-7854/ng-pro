@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { SharedModule } from '../../shared/shared.module';
 // components
-import { ScoringAdminComponent } from './pages/scoring-admin/scoring-admin.component';
 import { UserAdminComponent } from './pages/user-admin/user-admin.component';
+import { NewScoringComponent } from './pages/new-scoring/new-scoring.component';
 // routing
 import { AdminRoutingModule } from './admin-routing.module';
 
@@ -16,8 +16,8 @@ import { AdminRoutingModule } from './admin-routing.module';
   ],
   providers: [],
   declarations: [
-    ScoringAdminComponent,
-    UserAdminComponent
+    UserAdminComponent,
+    NewScoringComponent
   ]
 })
 export class AdminModule { }
