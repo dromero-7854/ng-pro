@@ -69,6 +69,11 @@
     font-size: 15px;
     margin-right: 5px;
   }
+
+  .psg-button .material-icons-outlined {
+    font-size: 20px;
+    margin-right: 3px;
+  }
   
   .more-vert {
     margin: 0;
@@ -169,6 +174,10 @@
   .checkbox-field {
     margin-left: 2px;
   }
+
+  .psg-scoring-card {
+    margin-bottom: 50px;
+  }
   
 }
 
@@ -187,4 +196,47 @@
   }
   
 }
+
+
+
+
+
+
+
+.psg-bottom-sheet {
+  position: fixed;
+  bottom: 55px;
+  right: 10px;
+}
+
+
+
+
+
+
+.psg-bottom-toolbar {
+  width: 100%;
+}
+
+.psg-bottom-toolbar .psg-mat-btn {
+  margin-right: 5px;
+}
+
+.psg-bottom-toolbar .psg-mat-btn:last-child {
+  margin-right: 0px;
+}
+
+.psg-bottom-toolbar .psg-button-icon {
+  margin-right: 5px;
+}
+
+.psg-bottom-toolbar .material-icons-outlined {
+  font-size: 20px;
+  margin-right: 3px;
+}
+
+
+
+
+
 

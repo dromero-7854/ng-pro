@@ -26,35 +26,41 @@
         <i class="material-icons">star_border</i>
       </div>
     </div>
-    <div class="psg-toolbar d-flex align-items-center">
-      <div class="psg-button more-vert" matRipple [matMenuTriggerFor]="menu">
-        <mat-icon class="more-vert-icon">more_vert</mat-icon>
+    
+    
+    <!--
+      <div class="psg-toolbar d-flex align-items-center">
+        <div class="psg-button more-vert" matRipple [matMenuTriggerFor]="menu">
+          <mat-icon class="more-vert-icon">more_vert</mat-icon>
+        </div>
+        <div class="psg-button" matRipple>
+          <i class="material-icons-outlined">save</i><span>Guardar</span>
+        </div>
+        <div class="psg-button" matRipple>
+          <i class="fas fa-calculator psg-button-icon"></i><span>Calcular</span>
+        </div>
+        <div class="psg-button" matRipple>
+          <i class="far fa-thumbs-up psg-button-icon"></i><span>Aprobar</span>
+        </div>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>
+            <mat-icon>dialpad</mat-icon>
+            <span>Redial</span>
+          </button>
+          <button mat-menu-item disabled>
+            <mat-icon>voicemail</mat-icon>
+            <span>Check voicemail</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>notifications_off</mat-icon>
+            <span>Disable alerts</span>
+          </button>
+        </mat-menu>
       </div>
-      <div class="psg-button" matRipple>
-        <i class="fas fa-calculator psg-button-icon"></i><span>Calcular</span>
-      </div>
-      <div class="psg-button" matRipple>
-        <i class="far fa-thumbs-up psg-button-icon"></i><span>Aprobar</span>
-      </div>
-      <div class="psg-button" matRipple>
-        <i class="far fa-save psg-button-icon"></i><span>Guardar</span>
-      </div>
-      <mat-menu #menu="matMenu">
-        <button mat-menu-item>
-          <mat-icon>dialpad</mat-icon>
-          <span>Redial</span>
-        </button>
-        <button mat-menu-item disabled>
-          <mat-icon>voicemail</mat-icon>
-          <span>Check voicemail</span>
-        </button>
-        <button mat-menu-item>
-          <mat-icon>notifications_off</mat-icon>
-          <span>Disable alerts</span>
-        </button>
-      </mat-menu>
-    </div>
-    <mat-progress-bar mode="determinate" value="70"></mat-progress-bar>
+    -->
+    
+    
+    <mat-progress-bar mode="determinate" value="30"></mat-progress-bar>
   </mat-card-actions>
 </mat-card>
 
@@ -72,9 +78,9 @@
   <div class="row">
     <mat-card class="psg-scoring-card">
       <div class="container">
-
-
-
+        
+        
+        
         <div [ngClass]="{ 'scoring-input': true, 'row': true, 'd-flex': true, 'align-items-center': !smallerWP, 'flex-column': smallerWP }">
           <div [ngClass]="{ 'flex-grow-1': !smallerWP }">
             <mat-form-field class="select-form-field">
@@ -184,4 +190,27 @@
       </div>
     </mat-card>
   </div>
+  
+  
+  
+  
+  <div class="row mt-2" *ngIf="!smallerWP">
+    <div class="psg-bottom-toolbar d-flex align-items-center justify-content-center">
+      <button mat-raised-button class="psg-mat-btn"><i class="material-icons">more_vert</i></button>
+      <button mat-raised-button class="psg-mat-btn"><i class="material-icons-outlined">save</i><span>Guardar</span></button>
+      <button mat-raised-button class="psg-mat-btn"><i class="fas fa-calculator psg-button-icon"></i><span>Calcular</span></button>
+      <button mat-raised-button class="psg-mat-btn"><i class="far fa-thumbs-up psg-button-icon"></i><span>Aprobar</span></button>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  <div class="psg-bottom-sheet" *ngIf="smallerWP">
+    <button mat-mini-fab class="psg-mat-btn add"><i class="material-icons-outlined">add</i></button>
+  </div>
+  
+  
 </div>
